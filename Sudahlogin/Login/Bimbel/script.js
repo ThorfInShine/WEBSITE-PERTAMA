@@ -81,39 +81,57 @@ window.addEventListener("click", function(event) {
 
 
     
-    document.addEventListener("DOMContentLoaded", function () {
-        // Temukan semua elemen tombol "BELI"
-        var buyButtons = document.querySelectorAll(".product-slider__cart");
-      
-        // Tambahkan event listener untuk setiap tombol "BELI"
-        buyButtons.forEach(function (button) {
-          button.addEventListener("click", function () {
-            // Temukan elemen radio yang dipilih dalam setiap produk
-            var selectedPackage = this.closest(".product-slider__item").querySelector("input[name='type5']:checked");
-      
-            // Periksa apakah pengguna telah memilih paket
-            if (selectedPackage) {
-              // Redirect ke /AINZ/INDEX.HTML jika paket telah dipilih
-              window.location.href = "/Sudahlogin/Login/Pembayaran/index.html";
-            } else {
+document.addEventListener("DOMContentLoaded", function () {
+  // Temukan semua elemen tombol "BELI"
+  var buyButtons = document.querySelectorAll(".product-slider__cart");
+
+  // Tambahkan event listener untuk setiap tombol "BELI"
+  buyButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+          // Temukan elemen radio yang dipilih dalam setiap produk
+          var selectedPackage = this.closest(".product-slider__item").querySelector("input[name='type5']:checked");
+
+          // Periksa apakah pengguna telah memilih paket
+          if (selectedPackage) {
+              // Dapatkan jenis produk berdasarkan teks judul
+              var productType = this.closest(".product-slider__item").querySelector(".product-slider__title").innerText.trim();
+
+              // Redirect sesuai dengan jenis produk
+              switch (productType) {
+                  case "PEMROGRAMAN WEB":
+                      window.location.href = "/Sudahlogin/Login/Prepembayaranpemrograman/index.html";
+                      break;
+                  case "DIGITAL MARKETING":
+                      window.location.href = "/Sudahlogin/Login/Prepembayaranmarketing/index.html";
+                      break;
+                  case "VIDEO EDITOR":
+                      window.location.href = "/Sudahlogin/Login/Prepembayaraneditor/index.html";
+                      break;
+                  case "BAHASA INGGRIS":
+                      window.location.href = "/Sudahlogin/Login/Prepembayaranbahasa/index.html";
+                      break;
+                  default:
+                      // Redirect to a default URL if the product type is not recognized
+                      window.location.href = "/defaultURL.html";
+                      break;
+              }
+          } else {
               // Tampilkan peringatan atau lakukan tindakan lain jika paket belum dipilih
               alert("Silakan pilih paket terlebih dahulu!");
-            }
-          });
-        });
-      
-        // Tambahkan event listener untuk setiap elemen radio
-        var radioButtons = document.querySelectorAll(".product-labels__checkbox");
-        radioButtons.forEach(function (radioButton) {
-          radioButton.addEventListener("change", updateBuyButtonStatus);
-        });
-      
-        // Inisialisasi status tombol "BELI" saat halaman dimuat
-        updateBuyButtonStatus();
+          }
       });
-      
+  });
 
-      
+  // Tambahkan event listener untuk setiap elemen radio
+  var radioButtons = document.querySelectorAll(".product-labels__checkbox");
+  radioButtons.forEach(function (radioButton) {
+      radioButton.addEventListener("change", updateBuyButtonStatus);
+  });
+
+  // Inisialisasi status tombol "BELI" saat halaman dimuat
+  updateBuyButtonStatus();
+});
+
       
 
       
