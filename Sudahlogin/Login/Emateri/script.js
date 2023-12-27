@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Tambahkan event listener untuk menangkap klik pada tombol Get Started
   getStartedButton.addEventListener('click', function (event) {
     event.preventDefault();
-    redirectToPayment('/Sudahlogin/Login/Prepembayaranbasic/INDEX.HTML');
+    redirectToPayment('/Sudahlogin/Login/Prepembayaranbasic/index.html');
   });
 
   // Ambil elemen tombol Upgrade to Pro
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Tambahkan event listener untuk menangkap klik pada tombol Upgrade to Pro
   upgradeToProButton.addEventListener('click', function (event) {
     event.preventDefault();
-    redirectToPayment('/Sudahlogin/Login/Prepembayaranpro/INDEX.HTML');
+    redirectToPayment('/Sudahlogin/Login/Prepembayaranpro/index.html');
   });
 
   // Ambil elemen tombol Go Fuhrer
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Tambahkan event listener untuk menangkap klik pada tombol Go Fuhrer
   goFuhrerButton.addEventListener('click', function (event) {
     event.preventDefault();
-    redirectToPayment('/Sudahlogin/Login/Prepembayaranfuhrer/INDEX.HTML');
+    redirectToPayment('/Sudahlogin/Login/Prepembayaranfuhrer/index.html');
   });
 
   // Fungsi untuk mengarahkan pengguna ke halaman pembayaran dengan URL yang sesuai
