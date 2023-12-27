@@ -93,28 +93,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
           // Periksa apakah pengguna telah memilih paket
           if (selectedPackage) {
-              // Dapatkan jenis produk berdasarkan teks judul
-              var productType = this.closest(".product-slider__item").querySelector(".product-slider__title").innerText.trim();
+              // Dapatkan jenis produk berdasarkan indeks elemen yang dipilih
+              var productIndex = this.closest(".product-slider__item").getAttribute("data-target");
+              var redirectUrl;
 
-              // Redirect sesuai dengan jenis produk
-              switch (productType) {
-                  case "PEMROGRAMAN WEB":
-                      window.location.href = "/Sudahlogin/Login/Prepembayaranpemrograman/index.html";
+              // Tentukan URL tujuan berdasarkan jenis produk
+              switch (productIndex) {
+                  case "img4":
+                      redirectUrl = "/Sudahlogin/Login/Prepembayaranpemrograman/index.html";
                       break;
-                  case "DIGITAL MARKETING":
-                      window.location.href = "/Sudahlogin/Login/Prepembayaranmarketing/index.html";
+                  case "img1":
+                      redirectUrl = "/Sudahlogin/Login/Prepembayaranmarketing/index.html";
                       break;
-                  case "VIDEO EDITOR":
-                      window.location.href = "/Sudahlogin/Login/Prepembayaraneditor/index.html";
+                  case "img2":
+                      redirectUrl = "/Sudahlogin/Login/Prepembayaraneditor/index.html";
                       break;
-                  case "BAHASA INGGRIS":
-                      window.location.href = "/Sudahlogin/Login/Prepembayaranbahasa/index.html";
+                  case "img3":
+                      redirectUrl = "/Sudahlogin/Login/Prepembayaranbahasa/index.html";
                       break;
                   default:
-                      // Redirect to a default URL if the product type is not recognized
-                      window.location.href = "/defaultURL.html";
+                      // Default URL, you can change this as needed
+                      redirectUrl = "/Sudahlogin/Login/Pembayaran/index.html";
                       break;
               }
+
+              // Redirect ke URL tujuan
+              window.location.href = redirectUrl;
           } else {
               // Tampilkan peringatan atau lakukan tindakan lain jika paket belum dipilih
               alert("Silakan pilih paket terlebih dahulu!");
@@ -131,7 +135,3 @@ document.addEventListener("DOMContentLoaded", function () {
   // Inisialisasi status tombol "BELI" saat halaman dimuat
   updateBuyButtonStatus();
 });
-
-      
-
-      
