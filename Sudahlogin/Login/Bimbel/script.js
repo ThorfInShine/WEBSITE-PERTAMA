@@ -94,7 +94,7 @@ window.addEventListener("click", function(event) {
             // Periksa apakah pengguna telah memilih paket
             if (selectedPackage) {
               // Redirect ke /AINZ/INDEX.HTML jika paket telah dipilih
-              window.location.href = "/Sudahlogin/Login/Pembayaran/INDEX.HTML";
+              window.location.href = "/Sudahlogin/Login/Pembayaran/index.html";
             } else {
               // Tampilkan peringatan atau lakukan tindakan lain jika paket belum dipilih
               alert("Silakan pilih paket terlebih dahulu!");
