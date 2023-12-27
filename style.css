@@ -1,0 +1,674 @@
+*,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+
+ /* Navbar */
+ .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .navbar {
+    border-radius: 3vh;
+  }
+  
+  
+  /*Navbar selesai*/
+  
+  .background {
+    overflow: auto;
+    background-image: linear-gradient(0deg, #011A48, #1E4954);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh; /* Sesuaikan dengan kebutuhan Anda */
+}
+
+.bg {
+    position: fixed;
+    top: -4rem;
+    left: -12rem;
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  .bg2 {
+    position: fixed;
+    bottom: -2rem;
+    right: -3rem;
+    z-index: -1;
+    width: 9.375rem;
+    opacity: 0;
+  }
+  
+  @media screen and (min-width: 48rem) {
+    main {
+      display: flex;
+      align-items: center;
+    }
+  
+    .bg,
+  .bg2 {
+      opacity: 0.3;
+    }
+  }
+  @media screen and (min-width: 93.75rem) {
+    .swiper {
+      width: 85%;
+    }
+  }
+  
+  .btn {
+    margin-bottom: 2vh;
+    margin-right: 0vh; 
+    transform: translateY(20%);
+   
+}
+
+
+.form-control {
+    margin-bottom: 2vh;
+    margin-right: 10vh; 
+    transform: translateY(20%);
+    
+}
+
+.btn1 {
+    margin-bottom: 2vh;
+    margin-left: 1vh; 
+    background-color:transparent;
+    border: none;
+    color: transparent;
+    filter: invert(100%);
+    transform: translateY(20%);
+}
+
+/* Carousel mulai */
+.carousel slide {
+    width: 10vh;
+    height: 10vh;
+}
+
+
+/* carousel selesai */
+.slide1 {
+    height: 60vh;
+    width: 160vh;
+    margin-top: 2vh;
+    margin-left: 18vh;
+    border-radius: 2vh;
+    position: relative; /* Ensure the container has a position */
+
+}
+
+.slide2 {
+    height: 60vh;
+    width: 160vh;
+    margin-top: 2vh;
+    margin-left: 18vh;
+    border-radius: 2vh;
+    position: relative; /* Ensure the container has a position */
+    
+}
+
+.slide3 {
+    height: 60vh;
+    width: 160vh;
+    margin-top: 2vh;
+    margin-left: 18vh;
+    border-radius: 2vh;
+    position: relative; /* Ensure the container has a position */
+ 
+}
+
+.carousel-control-prev-icon {
+    margin-left: 2vh;
+}
+
+.carousel-control-next-icon {
+    margin-right: 4vh;
+}
+/* Isi mulai */
+.container1 {
+    display: flex;
+    width: 75vh;
+    height: 38vh;
+    padding: 5vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: #023f64;
+    gap: 3vh;
+    flex-shrink: 0;
+    margin-left: 22vh;
+    margin-top: 2vh;
+    border-radius: 2vh;
+}
+
+.header1 {
+    align-self: stretch;
+    height: 2vh;
+    padding-right: 10vh;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-text1 {
+    width: 50vh;
+    height: 2vh;
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-top: 2vh;
+}
+
+.card-container1 {
+    align-self: stretch;
+    height: 50vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2vh;
+}
+
+.card1 {
+    flex: 1 1 0;
+    align-self: stretch;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    display: inline-flex;
+}
+
+.image-container1 {
+    width: 15vh;
+    height: 15vh;
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+
+.image1 {
+    width: 2vh;
+    height: 2vh;
+}
+
+.image1 img {
+    width: 15vh; /* Sesuaikan dengan lebar yang diinginkan */
+    height: 15vh; /* Biarkan tingginya menyesuaikan proporsi asli */
+   
+}
+
+
+.text-container1 {
+    width: 9vh;
+    height: 5vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.text1 {
+    width: 10vh;
+    height: 2vh;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+    margin-top: -5vh
+}
+  /* isi selesai */
+
+  /* isi 2 mulai */
+  .container2 {
+    display: flex;
+    width: 75vh;
+    height: 38vh;
+    padding: 5vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: #023f64;
+    gap: 3vh;
+    flex-shrink: 0;
+    margin-left: 100vh; 
+    margin-top: -37.8vh;
+    border-radius: 2vh;
+}
+
+.header2 {
+    align-self: stretch;
+    height: 2vh;
+    padding-right: 10vh;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-text2 {
+    width: 100vh;
+    height: 5vh;
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-top: 14vh;
+}
+
+.card-container2 {
+   align-self: stretch;
+    height: 50vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2vh;
+}
+
+.card2 {
+    flex: 1 1 0;
+    align-self: stretch;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    display: inline-flex;
+    margin-top: 2vh;
+}
+
+
+.image-container2 {
+    width: 15vh;
+    height: 15vh;
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    border-radius: 10vh;
+}
+
+.image2 img {
+    width: 8vh; /* Sesuaikan dengan lebar yang diinginkan */
+    height: 8vh; /* Biarkan tingginya menyesuaikan proporsi asli */
+   
+}
+
+.image2 {
+    width: 2vh;
+    height: 2vh;
+}
+
+.text-container2 {
+    width: 9vh;
+    height: 5vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.text2 {
+    width: 10vh;
+    height: 2vh;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+    margin-top: -6vh
+}
+
+/* isi 2 selesai */
+.kembarancard-container2 {
+    align-self: stretch;
+    height: 50vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2vh;
+}
+
+.kembarancard2 {
+    flex: 1 1 0;
+    align-self: stretch;
+    padding-left: 5.50px;
+    padding-right: 5.50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    display: inline-flex;
+    margin-top: -7vh;
+
+}
+
+.kembaranimage-container2 {
+    width: 15vh;
+    height: 15vh;
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    border-radius: 10vh;
+}
+
+.kembaranimage2 img {
+    width: 10vh; /* Sesuaikan dengan lebar yang diinginkan */
+    height: 10vh; /* Biarkan tingginya menyesuaikan proporsi asli */
+   
+}
+
+.kembaranimage2 {
+    width: 2vh;
+    height: 2vh;
+}
+
+.kembarantext-container2 {
+    width: 9vh;
+    height: 5vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.kembarantext2 {
+    width: 10vh;
+    height: 2vh;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+    margin-top: -4vh
+}
+/* kembaran card 2 */
+
+/* kembaran selesai */
+
+/* isi 3 mulai */
+.container3 {
+    display: flex;
+    width: 153vh;
+    height: 38vh;
+    padding: 5vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: #023f64;
+    gap: 3vh;
+    flex-shrink: 0;
+    margin-left: 22vh; 
+    margin-top: 4vh;
+    border-radius: 2vh;
+}
+
+.header3 {
+    align-self: stretch;
+    height: 2vh;
+    padding-right: 10vh;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-text3 {
+    width: 100vh;
+    height: 5vh;
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-top: 3vh;
+}
+
+.card-container3 {
+    align-self: stretch;
+    height: 50vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2vh;
+}
+
+.card3 {
+    flex: 1 1 0;
+    align-self: stretch;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    display: inline-flex;
+    margin-top: 2vh;
+}
+
+.image-container3 {
+    width: 15vh;
+    height: 15vh;
+    position: relative;
+    background: white;
+    border-radius: 2vh;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+
+.image3 {
+    width: 2vh;
+    height: 2vh;
+}
+
+.image3 img {
+    width: 15vh; /* Sesuaikan dengan lebar yang diinginkan */
+    height: 15vh; /* Biarkan tingginya menyesuaikan proporsi asli */
+   
+}
+
+.text-container3 {
+    width: 9vh;
+    height: 5vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.text3 {
+    width: 10vh;
+    height: 2vh;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+    margin-top: -5vh
+}
+/* isi 3 selesai */
+
+/* isi 4 mulai */
+.container4 {
+    padding: 5vh;
+    width: 153vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: #023f64;
+    gap: 3vh;
+    flex-shrink: 0;
+    margin-left: 22vh; 
+    margin-top: 4vh;
+    border-radius: 10px;
+}
+.container4 .card{
+    height: 100% !important;
+    width: 70%;
+    margin-left: 7vh;
+    background-image: linear-gradient(0deg, #011A48, #1E4954);
+}
+.container4 .card img{
+    height: 250px;
+}
+.course-item{
+    background-color: #82bec3 !important;
+    color: black;
+    padding: 1rem .8rem;
+}
+.course-item ul{
+    font-size: 12px;
+}
+
+.header4 {
+    align-self: stretch;
+    height: 2vh;
+    padding-right: 10vh;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-text4 {
+    width: 100vh;
+    height: 5vh;
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-top: 3vh;
+}
+
+.card-container4 {
+    align-self: stretch;
+    height: 50vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2vh;
+}
+
+.card4 {
+    flex: 1 1 0;
+    align-self: stretch;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    display: inline-flex;
+    margin-top: 2vh;
+}
+
+.card {
+    cursor: pointer;
+}
+
+.image-container4 {
+    width: 20vh;
+    height: 70vh;
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+
+.image4 {
+    width: 2vh;
+    height: 2vh;
+}
+
+.image4 img {
+    width: 20vh; /* Sesuaikan dengan lebar yang diinginkan */
+    height: 15vh; /* Biarkan tingginya menyesuaikan proporsi asli */
+   
+}
+
+.text-container4 {
+    width: 9vh;
+    height: 5vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.text4 {
+    width: 10vh;
+    height: 2vh;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+    margin-top: -5vh
+}
+
+.card-title {
+    color: aliceblue;
+}
+/* isi 4 selesai */
+
+.col-md-4 a {
+    color: transparent;
+}
+
+.col-md-4 a:hover {
+    color: transparent;
+}

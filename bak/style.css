@@ -1,0 +1,908 @@
+/* html {
+    padding: 0;
+    margin: 0;
+}
+ */
+
+ /* Navbar */
+ .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /*Navbar selesai*/
+  
+  .bg {
+    background: #343a40;
+  }
+  
+  .btn {
+    margin-right: 10px; 
+    transform: translateY(20%);
+   
+}
+
+
+.form-control {
+    margin-right: 10px; 
+    transform: translateY(20%);
+    
+}
+
+.btn1 {
+    margin-left: 1vh; 
+    background-color:transparent;
+    border: none;
+    color: transparent;
+    filter: invert(100%);
+    transform: translateY(20%);
+}
+
+/* Carousel mulai */
+.container {
+	padding: 2rem;
+}
+
+.slider-wrapper {
+    position:relative;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 300px; /* Ubah tinggi sesuai kebutuhan Anda */
+    width: 100%;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: unset;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+    -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar Firefox */
+    width: 100%; /* Mengubah width ke 100% */
+    white-space: nowrap; /* Menambah white-space untuk menghindari wrapping ke bawah */
+    height: 100%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.slider::-webkit-scrollbar {
+	display: none;
+}
+
+.slider img {
+    flex: 0 0 auto; /* Mengubah flex property */
+    min-width: 100%; /* Mengubah min-width ke 100% */
+    height: auto; /* Mengubah tinggi ke otomatis */
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.slider-nav a {
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+	opacity: 1;
+}
+
+
+/* carousel selesai */
+
+
+/* Isi mulai */
+.container1 {
+    display: flex;
+    width: 624px;
+    height: 320px;
+    padding: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: #495d69;
+    gap: 24px;
+    flex-shrink: 0;
+    margin-left: 200px; 
+    border-radius: 10px;
+}
+
+.header1 {
+    align-self: stretch;
+    height: 24px;
+    padding-right: 358.86px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-text1 {
+    width: 217.14px;
+    height: 24px;
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.card-container1 {
+    align-self: stretch;
+    height: 224px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.card1 {
+    flex: 1 1 0;
+    align-self: stretch;
+    padding-left: 5.50px;
+    padding-right: 5.50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    display: inline-flex;
+}
+
+.image-container1 {
+    width: 124px;
+    height: 124px;
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+
+.image1 {
+    width: 9px;
+    height: 9px;
+}
+
+.image1 img {
+    width: 15vh; /* Sesuaikan dengan lebar yang diinginkan */
+    height: 15vh; /* Biarkan tingginya menyesuaikan proporsi asli */
+   
+}
+
+
+.text-container1 {
+    width: 53.88px;
+    height: 44px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.text1 {
+    width: 100vh;
+    height: 22px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+
+.subtext1 {
+    width: 100vh;
+    height: 22px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+
+.certification-background1 {
+    width: 124px;
+    height: 124px;
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.certification-image1 {
+    width: 92px;
+    height: 124px;
+    left: 16px;
+    top: 0px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.subtext-certification1 {
+    width: 44.77px;
+    height: 44px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.text-certification1 {
+    width: 45.11px;
+    height: 22px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+
+.subtext-casn1 {
+    width: 39.45px;
+    height: 22px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+
+.buy-background1 {
+    width: 64.80px;
+    height: 44px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.buy-text1 {
+    width: 24.25px;
+    height: 22px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+
+.emeterai-text1 {
+    width: 100vh;
+    height: 22px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+  /* isi selesai */
+
+  /* isi 2 mulai */
+  .container2 {
+    display: flex;
+    width: 624px;
+    height: 320px;
+    padding: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: #495d69;
+    gap: 24px;
+    flex-shrink: 0;
+    margin-left: 850px; 
+    margin-top: -320;
+    border-radius: 10px;
+}
+
+.header2 {
+    align-self: stretch;
+    height: 24px;
+    padding-right: 358.86px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-text2 {
+    width: 217.14px;
+    height: 24px;
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.card-container2 {
+    align-self: stretch;
+    height: 224px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.card2 {
+    flex: 1 1 0;
+    align-self: stretch;
+    padding-left: 5.50px;
+    padding-right: 5.50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    display: inline-flex;
+}
+
+.image-container2 {
+    width: 124px;
+    height: 124px;
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+
+.image2 {
+    width: 9px;
+    height: 9px;
+}
+
+.text-container2 {
+    width: 53.88px;
+    height: 44px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.text2 {
+    width: 35.58px;
+    height: 22px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+
+.subtext2 {
+    width: 54.25px;
+    height: 22px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+
+.certification-background2 {
+    width: 124px;
+    height: 124px;
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.certification-image2 {
+    width: 92px;
+    height: 124px;
+    left: 16px;
+    top: 0px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.subtext-certification2 {
+    width: 44.77px;
+    height: 44px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.text-certification2 {
+    width: 45.11px;
+    height: 22px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+
+.subtext-casn2 {
+    width: 39.45px;
+    height: 22px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+
+.buy-background2 {
+    width: 64.80px;
+    height: 44px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.buy-text2 {
+    width: 24.25px;
+    height: 22px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+
+.emeterai-text2 {
+    width: 65.20px;
+    height: 22px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+/* isi 2 selesai */
+
+/* isi 3 mulai */
+.container3 {
+    display: flex;
+    width: 1275px;
+    height: 320px;
+    padding: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: #495d69;
+    gap: 24px;
+    flex-shrink: 0;
+    margin-left: 200px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.header3 {
+    align-self: stretch;
+    height: 24px;
+    padding-right: 358.86px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-text3 {
+    width: 217.14px;
+    height: 24px;
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.card-container3 {
+    align-self: stretch;
+    height: 224px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.card3 {
+    flex: 1 1 0;
+    align-self: stretch;
+    padding-left: 5.50px;
+    padding-right: 5.50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    display: inline-flex;
+}
+
+.image-container3 {
+    width: 124px;
+    height: 124px;
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+
+.image3 {
+    width: 9px;
+    height: 9px;
+}
+
+.text-container3 {
+    width: 53.88px;
+    height: 44px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.text3 {
+    width: 35.58px;
+    height: 22px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+
+.subtext3 {
+    width: 54.25px;
+    height: 22px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+
+.certification-background3 {
+    width: 124px;
+    height: 124px;
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.certification-image3 {
+    width: 92px;
+    height: 124px;
+    left: 16px;
+    top: 0px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.subtext-certification3 {
+    width: 44.77px;
+    height: 44px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.text-certification3 {
+    width: 45.11px;
+    height: 22px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+
+.subtext-casn3 {
+    width: 39.45px;
+    height: 22px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+
+.buy-background3 {
+    width: 64.80px;
+    height: 44px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.buy-text3 {
+    width: 24.25px;
+    height: 22px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+
+.emeterai-text3 {
+    width: 65.20px;
+    height: 22px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+/* isi 3 selesai */
+
+/* isi 4 mulai */
+.container4 {
+    display: flex;
+    width: 1275px;
+    height: 320px;
+    padding: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: #495d69;
+    gap: 24px;
+    flex-shrink: 0;
+    margin-left: 200px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.header4 {
+    align-self: stretch;
+    height: 24px;
+    padding-right: 358.86px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-text4 {
+    width: 217.14px;
+    height: 24px;
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.card-container4 {
+    align-self: stretch;
+    height: 224px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.card4 {
+    flex: 1 1 0;
+    align-self: stretch;
+    padding-left: 5.50px;
+    padding-right: 5.50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    display: inline-flex;
+}
+
+.image-container4 {
+    width: 124px;
+    height: 124px;
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+
+.image4 {
+    width: 9px;
+    height: 9px;
+}
+
+.text-container4 {
+    width: 53.88px;
+    height: 44px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.text4 {
+    width: 35.58px;
+    height: 22px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+
+.subtext4 {
+    width: 54.25px;
+    height: 22px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+
+.certification-background4 {
+    width: 124px;
+    height: 124px;
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.certification-image4 {
+    width: 92px;
+    height: 124px;
+    left: 16px;
+    top: 0px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.subtext-certification4 {
+    width: 44.77px;
+    height: 44px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.text-certification4 {
+    width: 45.11px;
+    height: 22px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+
+.subtext-casn4 {
+    width: 39.45px;
+    height: 22px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+
+.buy-background4 {
+    width: 64.80px;
+    height: 44px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.buy-text4 {
+    width: 24.25px;
+    height: 22px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+
+.emeterai-text4 {
+    width: 65.20px;
+    height: 22px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+/* isi 4 selesai */
