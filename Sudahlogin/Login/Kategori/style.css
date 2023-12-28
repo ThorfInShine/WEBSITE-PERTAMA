@@ -255,3 +255,14 @@ body {
     opacity: 0.3;
   }
 }
+
+  /* Mengubah warna link dengan kelas khusus */
+  .custom-link {
+    text-decoration: none; 
+    color: white; /* Ganti dengan warna yang diinginkan */
+  }
+
+  /* Mengubah warna link dengan kelas khusus pada hover */
+  .custom-link:hover {
+    color: blue; /* Ganti dengan warna yang diinginkan pada hover */
+  }

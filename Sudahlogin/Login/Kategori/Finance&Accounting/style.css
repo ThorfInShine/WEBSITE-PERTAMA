@@ -1,0 +1,279 @@
+:root {
+    --scrollcolor: #fff;
+    --scrollbackground: #141e27;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .background {
+    overflow: auto;
+    background-image: linear-gradient(0deg, #011A48, #1E4954);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh; /* Sesuaikan dengan kebutuhan Anda */
+  }
+
+  .slider__info a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #717171;
+    font-weight: 500;
+    background: #fff;
+    border-radius: 3.125rem;
+    transition: 0.3s ease-in-out;
+    padding: 0.438em 1.875rem;
+    font-size: 0.9rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-family: system-ui;
+    line-height: 1.1;
+    font-weight: 300;
+    color: #fff;
+    margin: 4rem auto 1rem;
+    width: 85%;
+    max-width: 1280px;
+  }
+  
+  .slider {
+    width: 85%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .slider__content {
+    overflow-x: scroll;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    scrollbar-color: var(--scrollcolor) var(--scrollbackground);
+  }
+  .slider__content::-webkit-scrollbar {
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 1rem;
+    background: var(--scrollbackground);
+  }
+  .slider__content::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background: var(--scrollcolor);
+  }
+  .slider__content::-webkit-scrollbar-track {
+    border-radius: 1rem;
+    background: var(--scrollbackground);
+  }
+  
+  .slider__item {
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-width: 100%;
+    width: 100%;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 1;
+  }
+  @media (min-width: 460px) {
+    .slider__item {
+      aspect-ratio: 2/3;
+      min-width: calc((100% / 2) - 2rem);
+    }
+  }
+  @media (min-width: 940px) {
+    .slider__item {
+      min-width: calc((100% / 3) - 4rem);
+    }
+  }
+  
+  .slider__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .slider__info {
+    position: relative;
+    padding: 4rem 2rem 2rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(32, 50, 57, 0));
+  }
+  .slider__info h2 {
+    color: #fff;
+    font-family: system-ui;
+    line-height: 1.1;
+    font-weight: 300;
+    font-size: 1.75rem;
+    margin: 0;
+  }
+  
+  .slider__nav {
+    margin: 1rem 0 4rem;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-content: center;
+    align-items: center;
+    pointer-events: none;
+  }
+  @media (min-width: 460px) {
+    .slider__nav {
+      justify-content: flex-end;
+    }
+  }
+  
+  .slider__nav__button {
+    margin: 0;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border: 0;
+    border-radius: 2rem;
+    background: #fff;
+    color: #203239;
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    line-height: 1;
+    pointer-events: none;
+    transition: 0.2s ease-out;
+    opacity: 0.25;
+  }
+  .slider__nav__button--active {
+    opacity: 1;
+    pointer-events: auto;
+    cursor: pointer;
+  }
+  
+  
+/* css gweh */
+.navbar {
+  border-radius: 3vh;
+}
+
+/* Style untuk dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #00ffdd;
+  max-width: 50vh;
+  width: 8vh;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  margin-left: -1vh;
+  border-radius: 3vh;
+  margin-top: 0.5vh;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 1vh 1vh;
+  text-decoration: none;
+  display: block;
+  max-width: 100%;
+  font-size: 15;
+  margin-left: 0vh;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  border-radius: 3vh;
+}
+
+/* Style untuk menampilkan dropdown ketika tombol ditekan */
+.show {
+  display: block;
+}
+
+
+.btn1 {
+  margin: 0; /* Menghilangkan margin */
+  padding: 0; /* Menghilangkan padding */
+  width: 4vh; /* Menyesuaikan lebar dengan tinggi */
+  height: 4vh; /* Menyesuaikan tinggi dengan lebar */
+  background-image: url(/gambar/astolfo.png);
+  background-size: cover;
+  border: none;
+  color: transparent;
+  border-radius: 50%; /* Mengubah ke bentuk lingkaran */
+  transform: translateY(20%);
+  margin-left: 1vh;
+  margin-bottom: 1vh;
+}
+
+.form-control {
+  margin-bottom: 1vh;
+  margin-right: 10vh; 
+  transform: translateY(20%);
+  
+}
+
+.btn {
+  margin-bottom: 1vh;
+  margin-right: 0vh; 
+  transform: translateY(20%);
+ 
+}   
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.bg {
+  position: fixed;
+  top: -4rem;
+  left: -12rem;
+  z-index: -1;
+  opacity: 0;
+}
+
+.bg2 {
+  position: fixed;
+  bottom: -2rem;
+  right: -3rem;
+  z-index: -1;
+  width: 9.375rem;
+  opacity: 0;
+}
+
+@media screen and (min-width: 48rem) {
+  main {
+    display: flex;
+    align-items: center;
+  }
+
+  .bg,
+.bg2 {
+    opacity: 0.3;
+  }
+}
+
+.background {
+  overflow: auto;
+  background-image: linear-gradient(-120deg, #011A48, #1E4954);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh; /* Sesuaikan dengan kebutuhan Anda */
+}

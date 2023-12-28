@@ -98,6 +98,8 @@ main > div > a:hover {
 .swiper-pagination-bullet,
 .swiper-pagination-bullet-active {
   background: #fff;
+  width: 3px;
+  height: 3px;
 }
 
 .swiper-pagination {
@@ -180,6 +182,98 @@ main > div > a:hover {
 .swiper-slide--five {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/gambar/yuta.jpg") no-repeat 50% 50%/cover;
 }
+
+
+/* Slide Six */
+.swiper-slide--six {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/gambar/WillyWonka.jpeg") no-repeat 50% 50%/cover;
+}
+
+/* Slide Seven */
+.swiper-slide--seven {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/gambar/Wanda.jpeg") no-repeat 50% 50%/cover;
+}
+
+/* Slide Eight */
+.swiper-slide--eight {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/gambar/TonyStark.jpeg") no-repeat 50% 50%/cover;
+}
+
+/* Slide Nine */
+.swiper-slide--nine {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/gambar/tchalla.jpeg") no-repeat 50% 50%/cover;
+}
+
+/* Slide Ten */
+.swiper-slide--ten {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/gambar/shuri.jpeg") no-repeat 50% 50%/cover;
+}
+
+/* Slide Eleven */
+.swiper-slide--eleven {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/gambar/Senku.jpeg") no-repeat 50% 50%/cover;
+}
+
+/* Slide Twelve */
+.swiper-slide--twelve {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/gambar/PamanGober.jpeg") no-repeat 50% 50%/cover;
+}
+
+/* Slide Thirteen */
+.swiper-slide--thirteen {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/gambar/TomHolland.jpeg") no-repeat 10% 10%/cover;
+}
+
+/* Slide Fourteen */
+.swiper-slide--fourteen {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/gambar/NedLeeds.jpeg") no-repeat 50% 50%/cover;
+}
+
+/* Slide Fifteen */
+.swiper-slide--fifteen {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/gambar/MrCrab.jpeg") no-repeat 50% 50%/cover;
+}
+
+/* Slide Sixteen */
+.swiper-slide--sixteen {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/gambar/mail.jpeg") no-repeat 50% 50%/cover;
+}
+
+/* Slide Seventeen */
+.swiper-slide--seventeen {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/gambar/Loki.jpeg") no-repeat 50% 50%/cover;
+}
+
+/* Slide Eighteen */
+.swiper-slide--eighteen {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/gambar/HermioneGranger.jpeg") no-repeat 50% 50%/cover;
+}
+
+/* Slide Nineteen */
+.swiper-slide--nineteen {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/gambar/HarryPotter.jpeg") no-repeat 50% 50%/cover;
+}
+
+/* Slide Twenty */
+.swiper-slide--twenty {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/gambar/groot.jpeg") no-repeat 50% 50%/cover;
+}
+
+/* Slide Twenty-One */
+.swiper-slide--twentyone {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/gambar/BruceWayne.jpeg") no-repeat 50% 50%/cover;
+}
+
+/* Slide Twenty-Two */
+.swiper-slide--twentytwo {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/gambar/RobertBruceBanner.jpeg") no-repeat 50% 50%/cover;
+}
+
+/* Slide Twenty-Three */
+.swiper-slide--twentythree {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/gambar/Arthur.jpeg") no-repeat 50% 50%/cover;
+}
+
 
 
 

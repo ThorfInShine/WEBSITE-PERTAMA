@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login dan Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Judul login dan register MULAI -->
+    <div class="wrapper">
+          <div class="title-text">
+            <div class="title login">Form Login</div> <!-- Judul Login -->
+            <div class="title signup">Form Registrasi</div> <!-- Judul Regis -->
+          </div>
+<!-- Judul SELESAI -->
+          <!-- Container 1 -->
+          <div class="form-container">
+            <!-- Slide Login Register MULAI -->
+            <div class="slide-controls">
+              <input type="radio" name="slide" id="login" checked>
+              <input type="radio" name="slide" id="signup">
+              <label for="login" class="slide login">Login</label>
+              <label for="signup" class="slide signup">Daftar</label>
+              <div class="slider-tab"></div>
+            </div>
+            <!-- Slide Login Regis SELESAI -->
+
+            <!-- Form Login dan Regis -->
+
+            <!-- Form Login MULAI -->
+            <div class="form-inner">
+              <form action="#" class="login">
+                <pre>
+                </pre>
+                <div class="field">
+                  <input type="text" placeholder="Masukan Email " required>
+                </div>
+                <div class="field">
+                  <input type="password" placeholder="Masukan Password" required>
+                </div>
+                <div class="pass-link"><a href="#">Lupa password?</a></div>
+                <div class="field btn">
+                  <div class="btn-layer"></div>
+                  <input id="login-btn" type="submit" value="Login">
+                </div>
+                <div class="signup-link">Buat akun <a href="">Daftar sekarang</a></div>
+              </form>
+                <!-- Form Login SELESAI -->
+
+                <!-- Form Regis MULAI -->
+              <form action="#" class="signup">
+                <div class="field">
+                  <input type="text" placeholder="Masukan Nama" required>
+                </div>
+                <div class="field">
+                  <input type="text" placeholder="Masukan Email" required>
+                </div>
+                <div class="field">
+                  <input type="password" placeholder="Masukan Password" required>
+                </div>
+                <div class="field">
+                  <input type="password" placeholder="Ulangi password" required>
+                </div>
+                <div class="field btn">
+                  <div class="btn-layer"></div>
+                  <input type="submit" value="Daftar">
+                </div>
+                <div class="signup-link">Sudah punya akun? <a href="">Login</a></div>
+              </form>
+              <!-- Form Regis SELESAI -->
+            </div>
+          </div>
+        </div>
+      <script  src="./script.js"></script>
+    
+    </body>
+    </html>
+    

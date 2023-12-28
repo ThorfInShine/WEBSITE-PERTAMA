@@ -1,0 +1,608 @@
+/* ===== =====  Poppins Google Font  ===== =====  */
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+/* ===== =====>>  Universal Selector  <<===== =====  */
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== =====>>  Body Font Size  <<===== =====  */
+.heading {
+  font-size: 14px;
+  font-weight: 100;
+}
+.label {
+  font-size: 14px;
+  font-weight: 1000;
+}
+
+.info {
+  font-size: 12px;
+}
+
+/* ===== =====>> Css Variables  <<===== =====  */
+:root {
+  /* =====>>  Font Color  <<===== */
+  --f1-color: #fff;
+  --f2-color: #000;
+  --f3-color: rgba(0, 0, 0, 0.8);
+  --f4-color: rgba(0, 0, 0, 0.6);
+  --f5-color: #0099cc;
+  --f6-color: #88cee6;
+
+  /* =====>>  Background Color  <<===== */
+  --bg1-color: #fff;
+  --bg2-color: #000;
+  --bg3-color: #33ccff;
+  --bg4-color: #33cc33;
+  --bg5-color: #0099cc;
+  --bg6-color: rgba(0, 0, 0, 0.4);
+  --bg7-color: rgba(0, 0, 0, 0.2);
+  --glass-bg: linear-gradient(to right bottom,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.3));
+  --C-lg-bg: linear-gradient(45deg, #ff3399, #ff9933);
+
+  /* ===== =====>>  Font Size  <<===== =====  */
+  --xxxl-fs: 2.2rem;
+  --xxl-fs: 1.8rem;
+  --xl-fs: 1.6rem;
+  --l-fs: 1.4rem;
+  --m-fs: 1.2rem;
+  --s-fs: 1.1rem;
+  --xs-fs: 1rem;
+
+  /* =====>>  Margin  <<===== */
+  --m-2-5: 2.5rem;
+  --m-1-8: 1.8rem;
+  --m-1-5: 1.5rem;
+  --m-0-6: 0.6rem;
+  --m-0-5: 0.5rem;
+  --m-0-3: 0.3rem;
+
+  /* =====>>  Padding  <<===== */
+  --p-2-5: 2.5rem;
+  --p-1-5: 1.5rem;
+  --p-1-0: 1rem;
+  --p-0-8: 0.8rem;
+  --p-0-5: 0.5rem;
+  --p-0-4: 0.4rem;
+  --p-0-3: 0.3rem;
+}
+
+/* ===== =====>>  Body Css  <<===== =====  */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ===== =====>>  Body Main-Background Css  <<===== =====  */
+.main_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(bg.png);
+  background-position: left;
+  z-index: -1;
+  filter: blur(10px);
+}
+
+/* ===== =====>>  Main-Container Css  <<===== =====  */
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "header header"
+    "userProfile userDetails"
+    "work_skills timeline_about"
+    "work_skills timeline_about";
+  width: 85%;
+  height: 90vh;
+  background: var(--glass-bg);
+  padding: var(--p-1-5);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 25px rgba(0, 0, 0, 0.08);
+  
+  
+}
+
+/* .work_skills .work ul,
+.work_skills .work ul li {
+  display: flex;
+  align-items: center;
+}
+
+.work_skills .work ul li {
+  margin-right: var(--m-2-5);
+  border-radius: 0.5rem;
+}
+
+.work_skills .work ul li .ri {
+  margin-right: var(--m-0-5);
+  font-size: var(--xl-fs);
+}
+
+.work_skills .work ul li a {
+  font-size: var(--l-fs);
+  color: var(--f2-color);
+  font-weight: 500;
+}
+
+.work_skills .work ul .active {
+  background: #e6f2ff;
+  padding: var(--p-0-5) var(--p-1-5);
+}
+
+.work_skills .work ul .active a,
+.work_skills .work ul .active .ri {
+ .btns ul .active .ri {
+  color: var(--f5-color);
+}
+} */
+
+/* ===== =====>>  Container Cards Grid-Area Css Start  <<===== =====  */
+header {
+  grid-area: header;
+}
+
+.userProfile {
+  grid-area: userProfile;
+}
+
+.work_skills {
+  grid-area: work_skills;
+}
+
+.userDetails {
+  grid-area: userDetails;
+}
+
+.timeline_about {
+  grid-area: timeline_about;
+}
+
+/* ===== =====>>  Container Cards Css  <<===== =====  */
+.container .card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(3rem);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+  padding: var(--p-1-5);
+}
+
+/* ===== =====>>  Container Header/Navbar Css  <<===== =====  */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+/* ===== =====>>  User Main-Profile Css Start  <<===== ===== */
+.container .userProfile {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background: none;
+  backdrop-filter: none;
+  box-shadow: none;
+}
+
+.container .userProfile .profile figure img {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+}
+
+/* ===== =====>>  Work & Skills Css Start  <<===== ===== */
+.container .work_skills {
+  padding: var(--p-1-5);
+}
+
+.work_skills .work .heading,
+.work_skills .skills .heading {
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+  margin-bottom: var(--m-1-5);
+}
+
+.work_skills .work .heading::before,
+.work_skills .skills .heading::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 0.1rem;
+  width: 88%;
+  background: var(--bg6-color);
+}
+
+.work_skills .work .primary a,
+.work_skills .work .secondary a,
+.work_skills .work .Buy a,
+.work_skills .work .Sertificate a,
+.work_skills .work .Setting a {
+  text-decoration: none; /* Menghilangkan underline pada tautan */
+  color: rgba(56, 53, 53, 0.881); /* Ganti dengan warna yang diinginkan */
+}
+
+.work_skills .work .primary ,
+.work_skills .work .secondary {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-right: var(--m-2-5);
+  border-radius: 0.5rem;
+  margin-right: var(--m-0-5);
+  font-size: var(--xl-fs);
+  color: var(--f2-color);
+  font-weight: 600;
+  padding: var(--p-0-5) var(--p-1-5);
+  color: var(--f5-color);
+  /* Berikan ruang antara elemen */
+}
+
+.work_skills .work .primary ,
+.work_skills .work .Buy {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-right: var(--m-2-5);
+  border-radius: 0.5rem;
+  margin-right: var(--m-0-5);
+  font-size: var(--xl-fs);
+  color: var(--f2-color);
+  font-weight: 600;
+  padding: var(--p-0-5) var(--p-1-5);
+  color: var(--f5-color);
+  /* Berikan ruang antara elemen */
+}
+
+.work_skills .work .primary,
+.work_skills .work .Sertificate {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-right: var(--m-2-5);
+  border-radius: 0.5rem;
+  margin-right: var(--m-0-5);
+  font-size: var(--xl-fs);
+  color: var(--f2-color);
+  font-weight: 600;
+  padding: var(--p-0-5) var(--p-1-5);
+  color: var(--f5-color);
+  /* Berikan ruang antara elemen */
+}
+
+.work_skills .work .primary,
+.work_skills .work .Setting {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-right: var(--m-2-5);
+  border-radius: 0.5rem;
+  margin-right: var(--m-0-5);
+  font-size: var(--xl-fs);
+  color: var(--f2-color);
+  font-weight: 600;
+  padding: var(--p-0-5) var(--p-1-5);
+  color: var(--f5-color);
+  /* Berikan ruang antara elemen */
+}
+
+/* =====>>  Skills Bars Css  <<===== */
+
+/* ===== =====>>  User Details Css Start  <<===== ===== */
+.userDetails {
+  position: relative;
+  padding: var(--p-1-5) var(--p-2-5);
+}
+
+.userDetails .userName h1 {
+  font-size: var(--xxxl-fs);
+}
+
+.userDetails .userName .map {
+  position: absolute;
+  top: 2.5rem;
+  left: 18.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userDetails .userName .map .ri {
+  margin-right: var(--m-0-3);
+  font-size: var(--m-fs);
+}
+
+.userDetails .userName .map span {
+  font-size: var(--s-fs);
+  color: var(--f3-color);
+  font-weight: 700;
+}
+
+.userDetails .userName p {
+  font-size: var(--m-fs);
+  font-weight: 700;
+  color: var(--f5-color);
+  margin-bottom: var(--m-1-8);
+}
+
+.userDetails .Score {
+  position: relative;
+  margin-bottom: var(--m-1-8);
+}
+
+.userDetails .Score .heading {
+  font-size: var(--xs-fs);
+  color: var(--f4-color);
+  text-transform: uppercase;
+  margin-bottom: var(--m-0-6);
+  font-weight: bold;
+}
+
+.userDetails .Score span {
+  font-size: var(--xxl-fs);
+  font-weight: 700;
+}
+
+.userDetails .Score .rating {
+  position: absolute;
+  top: 2.7rem;
+  left: 3.5rem;
+}
+
+.userDetails .Score .rating .rate {
+  color: var(--f5-color);
+  font-size: var(--l-fs);
+}
+
+.userDetails .Score .rating .underrate {
+  color: var(--f6-color);
+}
+
+.userDetails .btns ul,
+.userDetails .btns ul li {
+  display: flex;
+  align-items: center;
+}
+
+.userDetails .btns ul li {
+  margin-right: var(--m-2-5);
+  border-radius: 0.5rem;
+}
+
+.userDetails .btns ul li .ri {
+  margin-right: var(--m-0-5);
+  font-size: var(--xl-fs);
+}
+
+.userDetails .btns ul li a {
+  font-size: var(--l-fs);
+  color: var(--f2-color);
+  font-weight: 500;
+}
+
+.userDetails .btns ul .active {
+  background: #e6f2ff;
+  padding: var(--p-0-5) var(--p-1-5);
+}
+
+.userDetails .btns ul .active a,
+.userDetails .btns ul .active .ri {
+  color: var(--f5-color);
+}
+
+/* ===== =====>>  Timeline & About Css Start  <<===== ===== */
+.timeline_about {
+  padding: var(--p-2-5);
+}
+
+.timeline_about .tabs ul {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--m-2-5);
+}
+
+.timeline_about .tabs ul::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--bg7-color);
+}
+
+.timeline_about .tabs ul li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: var(--m-2-5);
+  padding-bottom: var(--p-0-8);
+  cursor: pointer;
+}
+
+.timeline_about .tabs ul li span {
+  font-size: var(--l-fs);
+  font-weight: 500;
+}
+
+.timeline_about .tabs ul li .ri {
+  margin-right: var(--m-0-5);
+}
+
+.timeline_about .tabs ul .active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--bg5-color);
+}
+
+.timeline_about .contact_info .heading,
+.timeline_about .basic_info .heading {
+  font-size: var(--xs-fs);
+  color: var(--f4-color);
+  text-transform: uppercase;
+  margin-bottom: var(--m-1-5);
+}
+
+.timeline_about .contact_info ul,
+.timeline_about .basic_info ul {
+  margin-bottom: var(--m-1-5);
+}
+
+.timeline_about .contact_info ul li,
+.timeline_about .basic_info ul li {
+  display: flex;
+  margin: var(--m-0-5) 0;
+}
+
+.timeline_about .contact_info ul li h1,
+.timeline_about .basic_info ul li h1 {
+  font-weight: 500;
+  font-size: var(--m-fs);
+  min-width: 12rem;
+}
+
+.timeline_about .contact_info ul li span,
+.timeline_about .basic_info ul li span {
+  font-size: var(--m-fs);
+}
+
+.timeline_about .contact_info ul .phone span,
+.timeline_about .contact_info ul .email span,
+.timeline_about .contact_info ul .site span {
+  color: var(--f5-color);
+}
+
+/* css gweh */
+.navbar {
+  border-radius: 3vh;
+}
+
+/* Style untuk dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #00ffdd;
+  max-width: 50vh;
+  width: 8vh;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  margin-left: -1vh;
+  border-radius: 3vh;
+  margin-top: 0.5vh;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 1vh 1vh;
+  text-decoration: none;
+  display: block;
+  max-width: 100%;
+  font-size: 15;
+  margin-left: 0vh;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  border-radius: 3vh;
+}
+
+/* Style untuk menampilkan dropdown ketika tombol ditekan */
+.show {
+  display: block;
+}
+
+
+.btn1 {
+  margin: 0; /* Menghilangkan margin */
+  padding: 0; /* Menghilangkan padding */
+  width: 4vh; /* Menyesuaikan lebar dengan tinggi */
+  height: 4vh; /* Menyesuaikan tinggi dengan lebar */
+  background-image: url(/gambar/astolfo.png);
+  background-size: cover;
+  border: none;
+  color: transparent;
+  border-radius: 50%; /* Mengubah ke bentuk lingkaran */
+  transform: translateY(20%);
+  margin-left: 1vh;
+  margin-bottom: 1vh;
+}
+
+.form-control {
+  margin-bottom: 1vh;
+  margin-right: 10vh; 
+  transform: translateY(20%);
+  
+}
+
+.btn {
+  margin-bottom: 1vh;
+  margin-right: 0vh; 
+  transform: translateY(20%);
+ 
+}   
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.bg {
+  position: fixed;
+  top: -4rem;
+  left: -12rem;
+  z-index: -1;
+  opacity: 0;
+}
+
+.bg2 {
+  position: fixed;
+  bottom: -2rem;
+  right: -3rem;
+  z-index: -1;
+  width: 9.375rem;
+  opacity: 0;
+}
+
+@media screen and (min-width: 48rem) {
+  main {
+    display: flex;
+    align-items: center;
+  }
+
+  .bg,
+.bg2 {
+    opacity: 0.3;
+  }
+}
+
+.background {
+  overflow: auto;
+  background-image: linear-gradient(0deg, #011A48, #1E4954);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh; /* Sesuaikan dengan kebutuhan Anda */
+}

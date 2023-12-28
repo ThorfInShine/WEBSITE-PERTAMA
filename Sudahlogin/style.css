@@ -715,3 +715,17 @@ html {
     color: transparent;
 }
 /* isi 4 selesai */
+
+/* warna href mulai */
+  /* Mengubah warna link dengan kelas khusus */
+  .custom-link {
+    text-decoration: none;
+    color: white; /* Ganti dengan warna yang diinginkan */
+  }
+
+  /* Mengubah warna link dengan kelas khusus pada hover */
+  .custom-link:hover {
+    color: blue; /* Ganti dengan warna yang diinginkan pada hover */
+  }
+
+  /* warna href selesai */
