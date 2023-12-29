@@ -482,6 +482,7 @@ html {
     margin-left: 22vh; 
     margin-top: 4vh;
     border-radius: 2vh;
+    height: 50%;
 }
 
 .header3 {
@@ -729,3 +730,12 @@ html {
   }
 
   /* warna href selesai */
+
+  .star-rating{
+    color: gold;
+    font-size: 20px;
+    }
+    .titlenm{
+        font-weight: bold;
+    }
+    
